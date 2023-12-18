@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilis.css">
+</head>
+<body>
+    <!-- header section start  -->
+    <header>
+        <div class="head-section layout">
+            <div class="nav-bar flex space-between align-center">
+                <div class="logo uppercase f-w-700 letter-spacing2"><span>Purvi</span> Panwalkar</div>
+                <div class="nav-links">
+                   
+                    <ul class="flex f-w-600">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- content  -->
+            <div class="content flex align-center">
+                <!-- left section  -->
+                <div class="left flex2">
+                    <h4 class="uppercase letter-spacing2">I'm <span>Purvi</span> </h4>
+                    <h2 class="my-t-10 uppercase letter-spacing2 f-w-700">UI/UX Designer</h2>
+                    <p class="my-t-10">I am a  Web Developer and <span>UI/UX Designer.</span> </p>
+                    <button class="btn btn2 my-t-20">Download CV</button>
+                </div>
+
+                <!-- right section  -->
+                <div class="right flex3">
+                    <img src="asset/profile picture.png" alt="profile png">
+                    <div class="color-box"></div>    
+                </div>
+            </div>
+        </div>
+    </header> 
+     <!-- about section start  -->
+     <section id="about">
+    
+        <div class="container">
+            <h3>Get To Know More</h3>
+            <hr class="hr-skill">
+            <h1 class="sub-title">About Me</h1>
+           
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="asset/OIP.jpg" class="about-pic" />
+
+                </div>
+                <div class="about-col-2">
+
+                    <p class="about-para">Welcome to my portfolio! I'm Purvi Panwalkar,a passionate UI/UX designer and web developer with a keen eye for creating visually appealing and user-friendly digital experiences. Leveraging a strong foundation in design principles and coding languages, I blend creativity with technical expertise. My goal is to craft seamless, intuitive interfaces that enhance user satisfaction. From wireframing to deployment, I thrive in transforming concepts into engaging websites. With a commitment to staying current on industry trends, I bring a fresh perspective to every project. Eager to contribute my skills and passion for innovation to projects that push the boundaries of digital design and development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Oct 2021 - Present</span><br>Currently pursuing a Diploma in IT at <br> Government
+                                Polytechnic Mumbai.</li>
+                            <li><span>Jun 2020 - Mar 2021</span><br>SSC from Vidya Mandir High School Mumbai. <br>Grade : 94.00%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep 2023 - Oct 2023</span><br>Web Developer Intern at Bharat Intern.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- about section end  -->
+
+    <!--------------------------------------------------------------------------------------
+     ---------------------------------------Skills-----------------------------------------                   
+    ---------------------------------------------------------------------------------------->
+
+    <section id="skills">
+        <div class="container">
+            <h3>Explore My</h3>
+            <hr class="hr-skill">
+
+            <h1 class="sub-title">Skills</h1>
+            <!-- <div class="container"> -->
+            <div class="container-box">
+<!-- 
+                <div class="container-title-data">
+
+                    <h3>Web Development</h3>
+                    <div class="container-data">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML<i class="fab fa-html5"
+                                style="color: #e74d22; "></i></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS<i class="fab fa-css3-alt"
+                                style="color: #2261ae;"></i></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript<i class="fab fa-js"
+                                style="color: #ecc623;"></i></a>
+                        <a href="https://www.php.net/docs.php">PHP<i class="fab fa-php" style="color: #4d5a91;"></i></a>
+                    </div>
+                </div>
+
+                <div class="container-title-data">
+
+                    <h3>App Development</h3>
+                    <div class="container-data">
+                        <a href="https://www.android.com/">Android<i class="fa-brands fa-android"
+                                style="color: #3cda83;"></i></a>
+                        <a href="https://www.java.com/en/">Java<i class="fa-brands fa-java"
+                                style="font-size:xx-large; color: #1665bf;"></i></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction">XML<i
+                                class="fa-solid fa-code" style="color: rgb(255, 128, 213);"></i></a>
+                    </div>
+                </div>
+
+                <div class="container-title-data">
+
+                    <h3>UI/UX Designing</h3>
+                    <div class="container-data">
+                        <a href="https://www.figma.com/">Figma<i class="fa-brands fa-figma"
+                                style="color: #2295e7;"></i></a>
+                        <a href="https://www.invisionapp.com/">InVision<i class="fa-brands fa-invision"
+                                style="color: #f52f61;"></i></a>
+                        <a href="https://www.sketch.com/">Sketch<i class="fa-brands fa-sketch"
+                                style="color: #ffbb29;"></i></a>
+                    </div>
+                </div> -->
+
+
+                <div class="skills">
+                    <!-- {* heading for title *} -->
+                    <!-- <h2>I have experience with these technologies</h2> -->
+                    <!-- {* Create a div and give it a class of skillsGrid for styling *} -->
+                <div class="skillsGrid">
+                    <!-- {* Let's render multiple copies of the Skill component. Make sure you update *}the source, alt, and title for each icon -->
+                    
+                    
+            
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          
+                    
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+          
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+          
+            
+        
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+          
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          
+          
+          
+          
+          
+            
+          
+
+                    
+                </div>            
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------------------------------------------------------------------------------
+     ---------------------------------------Projects-----------------------------------------                   
+    ---------------------------------------------------------------------------------------->
+
+    <section id="projects">
+        <div class="container">
+            <h3>Browse My</h3>
+            <hr class="hr-skill">
+            <h1 class="sub-title">Projects</h1>
+
+            <div class="container-project">
+                <!-- <div class="cta">
+                    <img src="asset/temperature.png" alt="tempt">
+                    <div class="text">
+                        <h2>TextSpeakBot</h2><br>
+                        <button onclick="location.href='https://github.com/nishakuvalekar25/text-to-speech-converter.github.io#text-to-speech-convertergithubio'">GitHub</button>
+                        <button onclick="location.href='https://nishakuvalekar25.github.io/text-to-speech-converter.github.io/'">Live Demo</button>
+                    </div>
+                </div> -->
+
+            <div class="project-box">
+                <img src="asset/temperatue .png" alt="tempt">
+                <div class="text">
+                    <!-- <h2>TextSpeakBot</h2><br> -->
+                    <button onclick="location.href='https://github.com/PurviPanwalkar/Temperature-Converter'">GitHub</button>
+                    <button onclick="location.href='https://purvipanwalkar.github.io/Temperature-Converter/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="asset/netflix.png" alt="" srcset="">
+                <div class="text">
+                    <!-- <h2>TextSpeakBot</h2><br> -->
+                    <button onclick="location.href='https://github.com/PurviPanwalkar/Netflixclone'">GitHub</button>
+                    <button onclick="location.href='https://purvipanwalkar.github.io/Netflixclone/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="asset/budget buddy.png" alt="" srcset="">
+                <div class="text">
+                    <!-- <h2>TextSpeakBot</h2><br> -->
+                    <button onclick="location.href='https://github.com/nishakuvalekar25/Budget_Buddy'">GitHub</button>
+                    
+                </div>
+            </div>
+
+
+            </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------
+     ------------------------------------------Contact Me---------------------------------------                   
+    ---------------------------------------------------------------------------------------->
+
+    <section id="contact">
+        <div class="container">
+            <h3>Looking for Help?</h3>
+            <hr class="hr-skill">
+            <h1 class="sub-title">Contact </h1>
+            <div class="container-contact">
+                <div class="form">
+                    <form name="Contact" id="Contact" action="" method="post">
+        
+                        <h4>Let's Connect</h4>
+                        <div class="form-row">
+                            <input type="text" class="form-control" name="Name" placeholder="Your Name" id="name">
+                            <input type="email" class="form-control" name="Email" placeholder="Email" id="email">
+                        </div>
+                        
+                        <div class="form-col">
+                            <textarea name="Message" id="message" class="form-control" cols="30" row="8" placeholder="Write message here"></textarea>
+                        </div>
+                        <button type="submit" value="button" id="submit">Send Message</button>
+                    </form>
+                </div>
+     
+            </div>
+        </div>
+        </section>
+
+         <!--------------------------------------------------------------------------------------
+     ------------------------------------------Footer---------------------------------------                   
+    ---------------------------------------------------------------------------------------->
+
+
+  <footer class="footer">
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2023 <a href="#" class="copyright-link">panwalkarsayali27</a> All Right Reserved
+      </p>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxkHtk1wZqrmWAS90VMIOv0aSMpnd20JJsSGfjQJsFWj60raC8DyticUq7znUV6UpU/exec';
+        const form = document.forms['Contact']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    
+
+</body>
+</html>
+
+
+       
+    
